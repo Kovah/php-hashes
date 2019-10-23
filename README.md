@@ -1,6 +1,7 @@
 # PHP 7.2 Hashes
 
 Exact PHP version: 7.2.23
+Number of available hash algorithms: 52
 
 As of today, there is no up-to-date overview on available PHP hash functions and their output and runtime.
 This repository contains branches for all currently supported PHP versions and their corresponding outputs.
