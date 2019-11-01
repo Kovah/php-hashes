@@ -12,13 +12,27 @@ This repository contains branches for all currently supported PHP versions and t
 ## Calculate the results
 
 The current results were calculated by running the following command on a MacBookPro15,1 with an 
-Intel i7 (6x 2.2GHz). Current Docker version is 19.03.2, build 6a30dfc.
+Intel i7 (6x 2.2GHz) CPU. Current Docker version is 19.03.4, build 9013bf5.
 
 All results are based on a string with a fixed length of 1024 characters, generated with the `random_bytes()` function.
 
 ```bash
+# Regular output to the CLI
 docker run -it --rm -v "$PWD/hashes.php":/usr/src/hashes.php -w /usr/src php:7.3-cli php hashes.php
 ```
+
+Additionally, for better statistical insights, you may generate a dataset which contains the execution times for all
+available algorithms, each with regular string and raw binary output and each for string lengths ranging from 512
+characters up to 2^25 (~33 mil) characters.  
+You can generate the csv file with the following command:
+
+```bash
+# Output to a csv file
+docker run -it --rm -v "$PWD":/usr/src/app -w /usr/src/app php:7.3-cli php hashes-csv.php
+```
+
+Please notice that the resulting csv file uses the semicolon as a delimiter and all numeric values use the dot as a
+decimal separator.
 
 
 ## Results
