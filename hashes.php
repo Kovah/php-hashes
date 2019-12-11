@@ -10,11 +10,11 @@
  * @author Kevin Woblick <mail@kovah.de>
  */
 
-echo 'PHP 7.3 Hash Overview' . PHP_EOL;
-echo '=====================' . PHP_EOL;
+echo 'PHP Hash Overview' . PHP_EOL;
+echo '=================' . PHP_EOL;
 echo 'Available algorithms: ' . count(hash_algos()) . PHP_EOL;
 
-// Generate and output the
+// Generate and output the test string
 echo PHP_EOL;
 $testString = bin2hex(random_bytes(512));
 echo 'Using the following string: ' . $testString . PHP_EOL;
