@@ -51,7 +51,7 @@ for ($stringLength = 512; $stringLength <= $maxLength; $stringLength *= 2) {
 
     $results = [];
 
-    $testString = bin2hex(random_bytes($stringLength / 2));
+    $testString = base64_encode(random_bytes($stringLength / 2));
     echo 'String length: ' . strlen($testString) . PHP_EOL;
 
     foreach ($algorithms as $algorithm) {

@@ -16,8 +16,8 @@ echo 'Available algorithms: ' . count(hash_algos()) . PHP_EOL;
 
 // Generate and output the test string
 echo PHP_EOL;
-$testString = bin2hex(random_bytes(51200));
-echo 'Using the following string: ' . $testString . PHP_EOL;
+$testString = base64_encode(random_bytes(51200));
+echo 'Using the string: ' . substr($testString, 0, 100) . '...' . PHP_EOL;
 echo 'with a length of ' . strlen($testString) . ' characters.' . PHP_EOL;
 
 $results = [];
