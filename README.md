@@ -3,7 +3,7 @@
 Exact PHP version: 8.0.0  
 Number of available hash algorithms: 53
 
-All PHP Versions: [7.1](https://github.com/Kovah/php-hashes/tree/7.1) | [7.2](https://github.com/Kovah/php-hashes/tree/7.2) | [7.3](https://github.com/Kovah/php-hashes/tree/7.3) | [7.4](https://github.com/Kovah/php-hashes/tree/7.4) | [8.0](https://github.com/Kovah/php-hashes/tree/8.0)
+All PHP Versions: [7.1](https://github.com/Kovah/php-hashes/tree/7.1) | [7.2](https://github.com/Kovah/php-hashes/tree/7.2) | [7.3](https://github.com/Kovah/php-hashes/tree/7.3) | [7.4](https://github.com/Kovah/php-hashes/tree/7.4) | [8.0](https://github.com/Kovah/php-hashes/tree/8.0) | [8.1](https://github.com/Kovah/php-hashes/tree/8.1)
 
 As of today, there is no up-to-date overview on available PHP hash functions and their output and runtime.
 This repository contains branches for all currently supported PHP versions and their corresponding outputs.
