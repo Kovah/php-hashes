@@ -3,7 +3,7 @@
 Exact PHP version: 7.3.25  
 Number of available hash algorithms: 52
 
-:warning: **Caution! PHP version 7.2 is no longer supported and should no longer be used!**
+:warning: **Caution! PHP version 7.3 is no longer supported and should no longer be used!**
 
 All PHP Versions: [7.1](https://github.com/Kovah/php-hashes/tree/7.1) | [7.2](https://github.com/Kovah/php-hashes/tree/7.2) | [7.3](https://github.com/Kovah/php-hashes/tree/7.3) | [7.4](https://github.com/Kovah/php-hashes/tree/7.4) | [8.0](https://github.com/Kovah/php-hashes/tree/8.0) | [8.1](https://github.com/Kovah/php-hashes/tree/8.1)
 
