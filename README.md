@@ -3,7 +3,7 @@
 Exact PHP version: 8.2.15  
 Number of available hash algorithms: 60
 
-All PHP Versions: [8.2](https://github.com/Kovah/php-hashes/tree/8.2) | [8.1](https://github.com/Kovah/php-hashes/tree/8.1) | [8.0](https://github.com/Kovah/php-hashes/tree/8.0) | [7.4](https://github.com/Kovah/php-hashes/tree/7.4) | [7.3](https://github.com/Kovah/php-hashes/tree/7.3) | [7.2](https://github.com/Kovah/php-hashes/tree/7.2) | [7.1](https://github.com/Kovah/php-hashes/tree/7.1)
+All PHP Versions: [8.3](https://github.com/Kovah/php-hashes/tree/8.3) | [8.2](https://github.com/Kovah/php-hashes/tree/8.2) | [8.1](https://github.com/Kovah/php-hashes/tree/8.1) | [8.0](https://github.com/Kovah/php-hashes/tree/8.0) | [7.4](https://github.com/Kovah/php-hashes/tree/7.4) | [7.3](https://github.com/Kovah/php-hashes/tree/7.3) | [7.2](https://github.com/Kovah/php-hashes/tree/7.2) | [7.1](https://github.com/Kovah/php-hashes/tree/7.1)
 
 As of today, there is no up-to-date overview on available PHP hash functions and their output and runtime.
 This repository contains branches for all currently supported PHP versions and their corresponding outputs.
@@ -18,7 +18,7 @@ All results are based on a string with a fixed length of 204800 characters, gene
 
 ```bash
 # Regular output to the CLI
-docker run -it --rm -v "$PWD/hashes.php":/usr/src/hashes.php -w /usr/src php:8.1-cli php hashes.php
+docker run -it --rm -v "$PWD/hashes.php":/usr/src/hashes.php -w /usr/src php:8.2-cli php hashes.php
 ```
 
 Additionally, for better statistical insights, you may generate a dataset which contains the execution times for all
@@ -28,7 +28,7 @@ You can generate the csv file with the following command:
 
 ```bash
 # Output to a csv file
-docker run -it --rm -v "$PWD":/usr/src/app -w /usr/src/app php:8.1-cli php hashes-csv.php
+docker run -it --rm -v "$PWD":/usr/src/app -w /usr/src/app php:8.2-cli php hashes-csv.php
 ```
 
 Please notice that the resulting csv file uses the semicolon as a delimiter and all numeric values use the dot as a
