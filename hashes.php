@@ -2,7 +2,7 @@
 
 /**
  * PHP Hashes
- * This script runs an example string trough all available PHP
+ * This script runs an example string through all available PHP
  * hashes and outputs metrics about those hashes.
  *
  * Based on work by <jrz.agarcia.gmail.com>.
@@ -16,7 +16,7 @@ echo 'Available algorithms: ' . count(hash_algos()) . PHP_EOL;
 
 // Generate and output the test string
 echo PHP_EOL;
-$testString = base64_encode(random_bytes(51200));
+$testString = base64_encode(random_bytes(150000));
 echo 'Using the string: ' . substr($testString, 0, 100) . '...' . PHP_EOL;
 echo 'with a length of ' . strlen($testString) . ' characters.' . PHP_EOL;
 
